@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-log in or sign up</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color:#3b5998 ;
+            padding: 0px 184.5px;
+        }
+        #logo{
+            line-height: 71px;
+            color: white;
+            font-size: 43px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .login-head{
+            color: white;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .login-head td{
+            padding-top: 5px;
+            padding-left: 8px;
+            padding-bottom: 0px;
+        }
+        .login-input input{
+            border: 1px solid black;
+            width: 150px;
+            height: 22px;
+            margin: 1px 5px;
+        }
+        #login{
+            width: 54px;
+            color: white;
+            background-color: #4870c7;
+            border: 0.5px solid rgba(0, 0, 0, 0.363)
+            
+        }
+        #login:hover{
+            background-color: #3b5998;
+
+        }
+        #forgot:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .login-bottom td{
+            padding-left: 8px;
+            font-size: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(196, 193, 193);
+        }
+        section{
+            padding: 40px 184.5px;
+            display: flex;
+            background-color: rgba(201, 228, 247, 0.363);
+        }
+       #fbnet{
+           margin-right: 50px;
+       }
+       h1{
+           font-size: 40px;
+           margin: 0px;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           color: rgb(77, 70, 70);
+       }
+       h2{
+           font-size: 20px;
+            margin: 0px;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           color: rgb(77, 70, 70);
+       }
+       #signup{
+           width: 500px;
+       }
+       
+       #signup-details{
+           margin-top: 15px;
+       }
+       #name {
+           display: flex;
+           justify-content: space-between;
+
+       }
+       #name input{
+           width: 45%;
+           height: 30px;
+           border-radius: 3px;
+           padding: 4px;
+       }
+       
+       #emailid input{
+        width: 100%;
+        height: 30px;
+        border-radius: 3px;
+        margin-top: 10px;
+        padding: 4px;
+       }
+       #DOB{
+        margin-top: 10px;
+       }
+       #DOB input{
+           margin-top: 10px;
+           width: 50%;
+           height: 30px;
+       }
+       #gender
+       {
+        margin-top: 10px;
+        
+       }
+       #gender h2{
+        margin-bottom: 13px;
+       }
+       #gender label {
+           padding-left: 40px;
+           font-size: 1.3em;
+           font-family: sans-serif;
+       }
+       #txt{
+           font-size: 10px;
+           font-family: sans-serif;
+           width: 60%;
+           padding-left: 10px;
+           margin-top: 12px;
+       }
+       #signup-btn{
+           margin-top: 20px;
+           margin-bottom: 20px;
+           width: 50%;
+           height: 40px;
+           border-radius: 2px;
+           background-color: rgb(40, 197, 67);
+           font-size: 19px;
+           color: white;
+       }
+       #signup-btn:hover{
+        background-color: rgba(45, 231, 76, 0.678);
+
+       }
+       #last{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(77, 70, 70);
+
+       }
+       #last span{
+           color: teal;
+       }
+       #last span:hover{
+           text-decoration: underline;
+           cursor: pointer;
+       }
+       footer{
+           padding: 50px 184.5px;
+           font-size: 13px;
+           font-family: sans-serif;
+       }
+       #ul1,#ul2{
+           list-style: none;
+           display: flex;
+           padding-left: 0px;
+       }
+       #ul1 li,#ul2 li{
+           padding-left: 20px;
+           width: auto;
+           
+       }
+       #ul1 li a,#ul2 li a{
+        text-decoration: none;
+
+       }
+
+       #end{
+           margin-top: 20px;
+           color: rgb(57, 71, 83);
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            facebook
+        </div>
+        <nav>
+            <form>
+                <table>
+                    <tbody>
+                        <tr class="login-head">
+                            <td> <label for="email">Email or Phone</label></td>
+                            <td> <label for="pass">Password</label></td>
+                        </tr>
+                        <tr class="login-input">
+                            <td> <input type="email" id="email" required> </td>
+                            <td> <input type="password" id="pass" style="margin-top: 0px;" required> </td>
+                            <td> <input type="submit" class="login-btn" value="Login" id="login"> </td>
+                        </tr>
+                        <tr class="login-bottom">
+                            <td></td>
+                            <td id="forgot"> forgotten account?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </nav>
+
+    </header>
+    <section>
+        <div id="fbnet">
+            <img src="fbnet.PNG">
+        </div>
+
+        <div id="signup">
+            <div id="signup-head">
+                <h1>Create an account</h1>
+                <h2>It's quick and easy.</h2>
+            </div>
+            <div id="signup-details">
+                <div id="name">
+                    <input type="text" placeholder="first name">
+                    <input type="text" placeholder="Surname">
+
+                </div>
+                <div id="emailid">
+                    <input type="text" placeholder="Email address or phone number">
+                    <input type="password" placeholder="New password">
+                </div>
+                <div id="DOB">
+                    <h2>Birthday</h2>
+                    
+                        <input type="date" >
+                    
+                    
+
+                </div>
+                <div id="gender">
+                    <h2>Gender</h2>
+                    <label>
+                        <input type="radio" name="int">Female
+                    </label>
+                    <label>
+                        <input type="radio" name="int" >Male
+                    </label>
+                    <label>
+                        <input type="radio" name="int" >Custom
+                    </label>
+
+                </div>
+                <div id="txt">
+                    By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.
+                </div>
+                <div>
+                    <input type="submit" value="Sign up" id="signup-btn">
+                </div>
+                <div id="last">
+                <span>Create a page</span> for celebrity, band or business</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="lang">
+            English (UK)
+        </div>
+        <HR>
+        <ul id="ul1">
+            <li><a href="#">SignUp</a></li>
+            <li><a href="#">LogIn</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">FacebookLite</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">PageCategories</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Portal</a></li>
+
+
+
+        </ul>
+        <ul id="ul2">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Local</a></li>
+            <li><a href="#">Fundraisers</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">CreatePage</a></li>
+            <li><a href="#">adCreate</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">AdChoices</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Help</a></li>
+
+
+
+        </ul>
+        <div id="end">
+            Facebook © 2020
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>
